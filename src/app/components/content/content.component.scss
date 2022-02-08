@@ -1,0 +1,144 @@
+$mainBlue: #034971;
+$linkColor: #2F8BB2;
+
+.head{
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow:  0 0 10px 5px rgba(3, 73, 113, 0.1);
+
+&__btn{
+  position: relative;
+  &::before{
+    content: '';
+    width: 12px;
+    height: 14px;
+    background-image: url(/assets/images/caret-left-fill.svg);
+    position: absolute;
+    right: 95%;
+  }
+}
+
+  &__title{
+    font-size: 24px;
+    line-height: 32px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+}
+
+.content{
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow:  0 0 10px 5px rgba(3, 73, 113, 0.1);
+  max-height: 60vh;
+
+  &__patient-information{
+    border-right: 1px solid rgba(3, 73, 113, 0.2);
+  }
+}
+
+.information-title{
+  color: $mainBlue;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 900;
+}
+
+
+.patient-history{
+  padding-left: 110px;
+  &__list, &__file-list{
+    border-bottom: 1px solid rgba(3, 73, 113, 0.2);
+  }
+  &__file-list.patient-history__file-list_last{
+    border-bottom: none;
+  }
+
+}
+
+.list{
+  &__key{
+    font-weight: bold;
+  }
+  &__key, &__value{
+    font-size: 12px;
+    line-height: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+}
+
+.btn_dark{
+  background-color: $mainBlue;
+  color: white;
+  line-height: 16px;
+  font-size: 14px;
+  min-width: 200px;
+  white-space: nowrap;
+  font-weight: 900;
+  padding: 8px;
+  &:hover{
+    background-color: white;
+    color: $mainBlue;
+    border:1px solid $mainBlue;
+  }
+}
+.btn_light {
+  background-color: white;
+  outline: none;
+  box-shadow: none;
+  border: 1px solid $mainBlue;
+  color: $mainBlue;
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 900;
+  padding: 8px 18px;
+  &:hover {
+    background-color: $mainBlue;
+    color: white;
+  }
+}
+.list__link{
+  color: $linkColor;
+  font-size: 12px;
+  line-height: 16px;
+
+}
+
+.file-list{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  &__link{
+    padding-bottom: 20px;
+  }
+}
+
+.badge{
+  background-color: rgba(255, 238, 205, 1);
+  color: black;
+  font-weight: 500;
+}
+
+.footer{
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow:  0 0 10px 5px rgba(3, 73, 113, 0.1);
+
+}
+
+@media screen and (max-width: 768px) {
+  .content__patient-information{
+    border-right: none;
+  }
+  .patient-history {
+    padding-left: 0;
+  }
+}
+
+
+
+
+
+

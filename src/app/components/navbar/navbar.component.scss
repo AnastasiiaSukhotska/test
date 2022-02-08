@@ -1,0 +1,86 @@
+$mainBlue: #034971;
+$linkColor: #2F8BB2;
+.navbar{
+  padding: 20px 30px 20px 30px;
+  background-color: rgba(3, 73, 113, 0.1);
+  box-shadow:  0 0 10px 5px rgba(3, 73, 113, 0.1);
+  .menu-area__title h2{
+    font-weight: 900;
+    line-height: 44px;
+    font-size: 32px;
+    text-transform: uppercase;
+    vertical-align: top;
+  }
+  .menu-area__menu{
+    a{
+      color: black;
+      font-weight: 900;
+      text-decoration: none;
+      font-size: 14px;
+      line-height: 20px;
+      vertical-align: top;
+      margin-right: 10px;
+      padding: 5px;
+      border-radius: 5px;
+      white-space: nowrap;
+      &:hover{
+        color: white;
+        background-color: rgba(3, 73, 113, 0.5);
+      }
+    }
+  }
+}
+
+.input-area{
+  &__input {
+    border: none;
+    width: 430px;
+    border-bottom: 1px solid $mainBlue;
+    box-shadow: none;
+    background-color: transparent;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: top;
+    position: relative;
+  }
+
+  &__sign{
+    position: relative;
+    &::before {
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-image: url(/assets/images/search.svg);
+      position: absolute;
+      left: 95%;
+      top: 10px;
+
+    }
+  }
+  .btn_dark{
+    background-color: $mainBlue;
+    color: white;
+    line-height: 16px;
+    font-size: 14px;
+    white-space: nowrap;
+    font-size: 900;
+    padding: 8px;
+    &:hover{
+      background-color: white;
+      color: $mainBlue;
+      border:1px solid $mainBlue;
+    }
+  }
+}
+@media screen and (min-width: 1120px) {
+  .input-area__input{
+
+  }
+}
+
+
+
+
+

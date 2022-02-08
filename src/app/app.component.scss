@@ -1,0 +1,79 @@
+@font-face{
+
+  font-family: "Lato";
+  font-weight: normal;
+  src: url("/assets/fonts/lato/Lato-Regular.ttf");
+}
+$mainBlue: #034971;
+$linkColor: #2F8BB2;
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Lato';
+}
+.main-container{
+  background-color: #F9FDFF;
+  min-height: 100vh;
+  &__header{
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
+.logo{
+  &__content{
+    width: 295px;
+    height: 39px;
+    background-image: url(/assets/images/logo.png);
+    background-repeat: no-repeat;
+
+  }
+}
+.greeting{
+  font-size: 14px;
+  line-height: 20px;
+  a.greetin__link{
+    color: $linkColor;
+  }
+  &__last-visit-mark{
+    line-height: 15px;
+    font-size: 12px;
+  }
+}
+.notification-and-dropdown{
+  .notification{
+    &__unreaded-messages{
+      font-size: 12px;
+      line-height: 14px;
+      color: white;
+      width: 14px;
+      height: 14px;
+      box-sizing: content-box;
+    }
+  }
+  .dropdown{
+    &__button{
+      border: 1px solid #B7C6CF;
+      width: 180px;
+      height: 40px;
+      border-radius: 4px;
+      text-align: left;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 900;
+    }
+  }
+}
+
+.dropdown-toggle::after{
+  margin-left: 60%;
+  color: $mainBlue;
+
+}
+@media screen and (min-width: 1120px) {
+  .main-container{
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
